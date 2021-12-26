@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* SITE */
+
+  --primary-grey: #5a5a5a;
+  --secondary-grey: #aaaaaa;
+  --tertiary-grey: #e3e3e3;
+  --footer-grey: #202020;
+  --fine-grey: #f9f9f9;
+  --red-color: #de0000;
+
+  /* DASHBOARD */
+
+  --dark-color: #232323;
+  --body-color: #f1f1f1;
+  --grey-color: #707070;
+  --light-grey: #d6d6d6;
+  --light-grey-extra: #f8f8f8;
+  --pink-color: #bf0059;
+  --green-color: #009d54;
+  --gold-color: #927500;
+  --blue-color: #05496b;
+  --purple-color: #7b06b4;
+  --red-color: #c42020;
+  --light-blue-color: #20b9b4;
+  --light-pink-color: #f697b1;
+  --light-purple-color: #a9b3e8;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.nav-wrapper {
+  border-bottom: 1px solid grey;
+}
+
+.shop-name {
+  width: 12rem;
+  padding: 8px 0rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navs,
+.navs .desktop,
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-family: "BauerBodoniStd-Roman";
+}
+
+.navs .mobile {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navs ul li:hover {
+  color: var(--primary-grey);
+}
+
+.navs {
+  max-width: 80%;
+  margin: auto;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+}
+
+.navs ul {
+  list-style: none;
+  align-items: center;
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+.icons {
+  align-items: center;
+  width: 10rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart div {
+  position: absolute;
+  width: 1.1rem;
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 0.25rem 0rem;
+  border-radius: 50%;
+  background: black;
+  color: #fff;
+  top: -0.5rem;
+  right: -1rem;
+}
+
+.tester {
+  position: relative;
+}
+
+.tester:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+}
+
+/* DASHBOARD */
+.dashboard-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* FLEX DEFAULTS */
+.flex-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+}
+
+.flex-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .shop-name {
+    width: 7rem;
+    padding: 8px 0rem;
+    font-size: 0.7rem;
+  }
+
+  nav ul {
+    width: 50%;
+    font-size: 0.5rem;
+  }
+
+  nav .desktop .sale {
+    display: none;
+  }
+
+  nav .desktop li {
+    font-size: 0.5rem;
+  }
+
+  .icons {
+    align-items: center;
+    width: 7rem;
+  }
+
+  .icon {
+    font-size: 1.1rem;
+  }
+
+  .arrow {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .shop-name {
+    width: 5rem;
+    padding: 7px 0rem;
+    font-size: 0.6rem;
+  }
+  .nav-wrapper {
+    position: relative;
+  }
+  nav .desktop {
+    display: none !important;
+  }
+
+  nav .mobile {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 6rem 0rem;
+    top: 0rem;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    z-index: 500;
+    background: rgb(0, 0, 0, 0.9);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .expand-icon {
+    font-size: 0.8rem !important;
+    float: right;
+    margin-top: -0.1rem;
+    margin-right: 2rem;
+  }
+
+  .expand-more-icon {
+    float: right;
+    font-size: 1.3rem !important;
+    margin-right: 2rem;
+    margin-top: -0.3rem;
+  }
+
+  .mobile-links {
+    height: 80%;
+    width: 50%;
+    opacity: 0;
+  }
+
+  .mobile-links li {
+    font-size: 0.8rem;
+    margin: 1.5rem 0rem;
+    padding-bottom: 0.2rem;
+    /* border-bottom: 1px #fff solid; */
+    color: #fff;
+  }
+
+  .mobile-links .men-link .mobile-shop-link,
+  .mobile-links .women-link .women-mobile-link,
+  .mobile-links .kids-link .kids-mobile-link,
+  .mobile-links .accessories-link .accessories-mobile-link {
+    font-size: 0.6rem;
+    margin: 1rem 1rem !important;
+    padding: 0rem !important;
+    border-bottom: none;
+  }
+
+  .mobile-links .men-link .mobile-shop-link:first-child,
+  .mobile-links .women-link .women-mobile-link:first-child {
+    margin-top: 2rem;
+  }
+
+  .icons {
+    justify-content: none;
+    width: 4rem;
+  }
+
+  .search,
+  .account,
+  .wishlist {
+    display: none;
+  }
+
+  .cart {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+  }
+
+  .cart div {
+    width: 1rem;
+    font-size: 0.5rem;
+    padding: 0.25rem 0rem;
+    border-radius: 100%;
+  }
+}

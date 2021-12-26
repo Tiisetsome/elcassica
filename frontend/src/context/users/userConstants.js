@@ -1,0 +1,4 @@
+export const USER_PROFILE = "USER_PROFILE";
+export const USER_LOGOUT = "USER_LOGOUT";
+export const ADD_SHIPPING_ADDRESS = "ADD_SHIPPING_ADDRESS";
+export const FETCH_USERS = "FETCH_USERS";
