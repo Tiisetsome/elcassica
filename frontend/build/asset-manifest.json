@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.895293a0.css",
+    "main.js": "/static/js/main.b0a654e9.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.710cb84718ae1a65995c.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.cec3e6545d80c6295043.ttf",
+    "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.f6584a1a193caa2ba024.ttf",
+    "static/media/BauerBodoniStd-Roman.otf": "/static/media/BauerBodoniStd-Roman.c18db866f82c79d3326c.otf",
+    "static/media/BauerBodoniStd-Italic.otf": "/static/media/BauerBodoniStd-Italic.8501eeaa4ce9365dd533.otf",
+    "static/media/BauerBodoniStd-Bold.otf": "/static/media/BauerBodoniStd-Bold.970f931d86f177b96d84.otf",
+    "index.html": "/index.html",
+    "main.895293a0.css.map": "/static/css/main.895293a0.css.map",
+    "main.b0a654e9.js.map": "/static/js/main.b0a654e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.895293a0.css",
+    "static/js/main.b0a654e9.js"
+  ]
+}
