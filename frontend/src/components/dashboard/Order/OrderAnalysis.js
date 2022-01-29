@@ -269,7 +269,7 @@ const OrderAnalysis = ({ orders, users }) => {
           pointRadius={2}
         />
 
-        <secition className="summary-container">
+        <section className="summary-container">
           <div className="summary">
             <h4>Overview</h4>
             <p>{quarterSales.message}</p>
@@ -308,7 +308,7 @@ const OrderAnalysis = ({ orders, users }) => {
               shadowColor="red"
             />
           </div>
-        </secition>
+        </section>
       </Container>
     </OrderAnalysisStyles>
   );

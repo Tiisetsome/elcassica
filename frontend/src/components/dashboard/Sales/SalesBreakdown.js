@@ -51,8 +51,14 @@ const SalesBreakdown = () => {
   const groupOrderItems = (itemsObj, shop) => {
     const groupedItems = itemsObj;
     dashOrders.forEach((customerOrder) => {
+      const yearOrderCreated = new Date(customerOrder.createdAt).getFullYear();
+
       customerOrder.orderItems.forEach((order) => {
-        if (order.shop === shop) {
+        if (
+          order.shop === shop &&
+          yearOrderCreated === ordersCurrentYearDisplay
+        ) {
+          groupedItems[order.product._id] = [];
           groupedItems[order.product._id] = [
             ...groupedItems[order.product._id],
             order,

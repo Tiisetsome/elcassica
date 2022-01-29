@@ -13,6 +13,7 @@ export const formatDateToString = (unformatedDate) => {
     "Apr",
     "May",
     "Jun",
+    "Jul",
     "Aug",
     "Sep",
     "Oct",
@@ -21,7 +22,5 @@ export const formatDateToString = (unformatedDate) => {
   ];
 
   const date = new Date(unformatedDate);
-  return `${date.getDate()} ${
-    months[date.getMonth() - 1]
-  } ${date.getFullYear()}`;
+  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 };
