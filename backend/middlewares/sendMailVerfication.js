@@ -3,12 +3,12 @@ const nodemailer = require("nodemailer");
 const sendMail = async (req, res, next) => {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: process.env.MAIL_HOST,
-    port: process.env.MAIL_PORT,
+    host: process.env.NODE_MAIL_HOST,
+    port: process.env.NODE_MAIL_PORT,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.MAIL_USER, // generated ethereal user
-      pass: process.env.MAIL_PASS, // generated ethereal password
+      user: process.env.NODE_MAIL_USERNAME, // generated ethereal user
+      pass: process.env.NODE_MAIL_PASSWORD, // generated ethereal password
     },
   });
 

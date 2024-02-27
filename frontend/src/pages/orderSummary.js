@@ -77,6 +77,7 @@ const OrderSummary = () => {
         setSdkReady(true);
       };
       document.body.appendChild(script);
+      return () => document.removeChild(script);
     };
 
     if (orders.length > 0) {

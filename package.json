@@ -22,7 +22,7 @@
     "mongoose": "^5.10.11",
     "morgan": "^1.10.0",
     "nodemailer": "^6.7.2",
-    "react-circular-progressbar": "^2.0.4",
+    "react-circular-progressbar": "^2.1.0",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
