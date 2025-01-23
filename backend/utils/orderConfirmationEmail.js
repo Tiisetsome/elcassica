@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const { DOMAIN } = require("./helpers");
 
 const sendOrderConfirmation = async (user, orderId, address) => {
   try {
@@ -127,12 +128,12 @@ const sendOrderConfirmation = async (user, orderId, address) => {
                             align-items: center;
                           "
                         >
-                          <a href="http://localhost:3000" alt="logo" title="logo">
+                          <a href="${DOMAIN}" alt="logo" title="logo">
                             <h5 class="logo" style="text-align: center; color: black">
                               ELCASSICA
                             </h5>
                           </a>
-                          <a href="http://localhost:3000/dashboard">
+                          <a href="${DOMAIN}">
                             <h5 style="text-align: center; color: black">
                               My Account
                             </h5>
@@ -157,7 +158,7 @@ const sendOrderConfirmation = async (user, orderId, address) => {
                     <p>Congradulation on your successful purchase with ELCASSICA!</p>
                     <p style="margin-bottom: 3rem">
                       If you have not paid for this order,
-                      <a href="http://localhost:3000/dashboard"></a
+                      <a href="${DOMAIN}/dashboard"></a
                       ><span style="color: rgb(172, 1, 1); text-decoration: underline"
                         >click here</span
                       >

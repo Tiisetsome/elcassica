@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const { DOMAIN } = require("./helpers");
 
 const sendMail = async (id, email, fName, lName) => {
   try {
@@ -122,7 +123,7 @@ const sendMail = async (id, email, fName, lName) => {
                     Thank you for signing up for Elcassica! Please verify your email
                     address by clicking the button below.
                   </p>
-                  <a href="http://localhost:3000/signUp/mailVerification/${id}">
+                  <a href="${DOMAIN}/signUp/mailVerification/${id}">
                     <div
                     class="button"
                         style="
